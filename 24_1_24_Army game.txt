@@ -46,11 +46,18 @@
 import math
 
 def gameWithCells(n, m):
+    # Calculate packages needed for rows and columns
     packages_in_rows = math.ceil(n / 2)
     packages_in_columns = math.ceil(m / 2)
-     total_packages = packages_in_rows * packages_in_columns
+
+    # Calculate total packages needed
+    total_packages = packages_in_rows * packages_in_columns
 
     return total_packages
+
+# Sample Input
 n, m = map(int, input().split())
+
+# Output the result
 result = gameWithCells(n, m)
 print(result)
